@@ -3,11 +3,11 @@ const usersList = require('../../db/user/usersList');
 
 const router = new Router();
 
-router.get('checkName/:name', async ctx => {
+router.get('/checkName/:name', async ctx => {
     const { name } = ctx.params;
 
-    ctx.set('Access-Control-Allow-Origin', '*');
-    console.log('ctx-params', name);
+    ctx.set('Access-Control-Allow-Origin', '*'); 
+    console.log('ctx-params', name); 
 })
 
-module.exports = router;
+module.exports = router; 
